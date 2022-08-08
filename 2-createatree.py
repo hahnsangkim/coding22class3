@@ -22,6 +22,7 @@ player_y = 50
 
 player_image = pygame.image.load('images/kiiro.png')
 
+# 2: create a tree
 BOARD_WIDTH, BOARD_HEIGHT = 600, 800
 import random
 tree_image = pygame.image.load('images/tree.png')
@@ -35,6 +36,7 @@ game_on = True
 while game_on:
     BOARD.fill((255, 255, 255))
     BOARD.blit(player_image, (player_x, player_y))
+    # 2: display a tree
     BOARD.blit(tree_image, (tree_x, tree_y))
 
     for event in pygame.event.get():
@@ -49,7 +51,7 @@ while game_on:
                 player_y = player_y - 1
             elif event.key == pygame.K_DOWN:
                 player_y = player_y + 1
-                
+    # 2: update a tree coordinate
     tree_y = tree_y + tree_y_inc
     if tree_y < -tree_height:
         tree_y = BOARD_HEIGHT

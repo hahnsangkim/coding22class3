@@ -57,6 +57,7 @@ while game_on:
                 player_y_inc = -PLAYER_SPEED
             elif event.key == pygame.K_DOWN:
                 player_y_inc = PLAYER_SPEED
+        # 3: keep moving until releasing key buttons
         elif event.type == pygame.KEYUP:
             if event.key == pygame.K_LEFT:
                 player_x_inc = 0
@@ -69,7 +70,7 @@ while game_on:
     print('(x inc, y inc) = ({}, {})'.format(player_x_inc, player_y_inc))
     player_x = player_x + player_x_inc
     player_y = player_y + player_y_inc
-    # begin: step 1 Challenge 1
+    # 3: keep the bird moving inside the board
     if player_x < 0:
         player_x = 0
     elif player_x > BOARD_WIDTH:
@@ -78,7 +79,6 @@ while game_on:
         player_y = 0
     elif player_y > BOARD_HEIGHT:
         player_y = BOARD_HEIGHT
-    # end: step 1 challenge 1   
                 
     tree_y = tree_y + tree_y_inc
     if tree_y < -tree_height:
