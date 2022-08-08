@@ -1,10 +1,5 @@
 #!/usr/bin/env python3
 """A simple skiing game.
-
-Day-iteration:
-2-1: Screen with stationary rectangle
-2-2: Game loop and movement
-2-3: User input
 """
 import pygame
 
