@@ -62,7 +62,7 @@ while game_on:
                 player_y_inc = 0
             elif event.key == pygame.K_DOWN:
                 player_y_inc = 0
-    print('(x inc, y inc) = ({}, {})'.format(player_x_inc, player_y_inc))
+    # print('(x inc, y inc) = ({}, {})'.format(player_x_inc, player_y_inc))
     player_x = player_x + player_x_inc
     player_y = player_y + player_y_inc
     # 3: keep the bird moving inside the board

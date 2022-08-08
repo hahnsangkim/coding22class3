@@ -33,12 +33,7 @@ tree_x3 = random.randint(0, BOARD_WIDTH - tree_width)
 tree_y3 = random.randint(0, BOARD_HEIGHT)
 '''
 Assignment: create ten trees
-add below
-tree_x4 =
-tree_y4 =
-...
-tree_x10 =
-tree_y10 =
+add your code below
 '''
 # create ten trees more below
 
@@ -71,10 +66,9 @@ while game_on:
                 player_y_inc = 0
             elif event.key == pygame.K_DOWN:
                 player_y_inc = 0
-    print('(x inc, y inc) = ({}, {})'.format(player_x_inc, player_y_inc))
+    # print('(x inc, y inc) = ({}, {})'.format(player_x_inc, player_y_inc))
     player_x = player_x + player_x_inc
     player_y = player_y + player_y_inc
-    # begin: step 1 Challenge 1
     if player_x < 0:
         player_x = 0
     elif player_x > BOARD_WIDTH:
@@ -83,7 +77,6 @@ while game_on:
         player_y = 0
     elif player_y > BOARD_HEIGHT:
         player_y = BOARD_HEIGHT
-    # end: step 1 challenge 1   
                 
     tree_y = tree_y + tree_y_inc
     if tree_y < -tree_height:
@@ -96,14 +89,7 @@ while game_on:
         tree_y3 = BOARD_HEIGHT
     '''
     Assignment: create ten trees
-    add below
-    tree_y4 = tree_y4 + tree_y_inc
-    if tree_y4 < -tree_height:
-        tree_y4 = BOARD_HEIGHT
-    ...
-    tree_y10 = tree_y10 + tree_y_inc
-    if tree_y10 < -tree_height:
-        tree_y10 = BOARD_HEIGHT
+    add your code below
     '''
 
     pygame.display.flip()
