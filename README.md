@@ -22,3 +22,6 @@ Install packages
 ```
 (coding22class3) coding22class3 $ python3 3-movebird.py
 ```
+
+## Other material
+Week 3 presentation material is [here](https://docs.google.com/presentation/d/1l-usmrIogqymbeiyN1_3BzMB5UAB7IkaJR11bpHsK6Q/edit?usp=sharing) (access restricted)
