@@ -26,7 +26,7 @@ tree_y = random.randint(0, BOARD_HEIGHT)
 DOWNHILL_SPEED = 4
 tree_y_inc = -DOWNHILL_SPEED
 
-# 2: create more trees
+# 2: challenge 2 - create more trees
 tree_x2 = random.randint(0, BOARD_WIDTH - tree_width)
 tree_y2 = random.randint(0, BOARD_HEIGHT)
 tree_x3 = random.randint(0, BOARD_WIDTH - tree_width)
@@ -37,7 +37,7 @@ while game_on:
     BOARD.fill((255, 255, 255))
     BOARD.blit(player_image, (player_x, player_y))
     BOARD.blit(tree_image, (tree_x, tree_y))
-    # 2: display more trees
+    # 2: challenge 2 - display more trees
     BOARD.blit(tree_image, (tree_x2, tree_y2))
     BOARD.blit(tree_image, (tree_x3, tree_y3))
 
@@ -57,7 +57,7 @@ while game_on:
     tree_y = tree_y + tree_y_inc
     if tree_y < -tree_height:
         tree_y = BOARD_HEIGHT
-    # 2: update y coordinates
+    # 2: challenge 2 - update y coordinates
     tree_y2 = tree_y2 + tree_y_inc
     if tree_y2 < -tree_height:
         tree_y2 = BOARD_HEIGHT

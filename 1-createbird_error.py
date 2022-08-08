@@ -13,12 +13,15 @@ BOARD = pygame.display.set_mode(BOARD_SIZE)
 CLOCK = pygame.time.Clock()
 
 # 1: create a bird
+# player = pygame.Rect(100, 200, 50, 50)
 player_image = pygame.image.load('images/kiiro.png')
 
 game_on = True
 while game_on:
+    # 1: change in white
     BOARD.fill((255, 255, 255))
     # 1: display a bird
+    # pygame.draw.rect(BOARD, (255, 0, 0), (player))
     BOARD.blit(player_image, (player_x, player_y))
 
     for event in pygame.event.get():

@@ -17,13 +17,17 @@ player_y = 50
 
 player_image = pygame.image.load('images/kiiro.png')
 
-# 2: create a tree
+# 2: create a tree at (300, 400)
 BOARD_WIDTH, BOARD_HEIGHT = 600, 800
 import random
 tree_image = pygame.image.load('images/tree.png')
+tree_x = 300
+tree_y = 400
+# then at a random position
 tree_width, tree_height = tree_image.get_size()
 tree_x = random.randint(0, BOARD_WIDTH - tree_width)
 tree_y = random.randint(0, BOARD_HEIGHT)
+# 2: challenge 1 - make the tree moving-up
 DOWNHILL_SPEED = 4
 tree_y_inc = -DOWNHILL_SPEED
 
@@ -46,7 +50,7 @@ while game_on:
                 player_y = player_y - 1
             elif event.key == pygame.K_DOWN:
                 player_y = player_y + 1
-    # 2: update a tree coordinate
+    # 2: challenge 1 - update a tree coordinate
     tree_y = tree_y + tree_y_inc
     if tree_y < -tree_height:
         tree_y = BOARD_HEIGHT
