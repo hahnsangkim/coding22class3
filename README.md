@@ -5,7 +5,6 @@ Class 3 Material for Coding School 2022
 - Replace Rect object with a skiing bird
 - Create moving trees
 - Learn a coordinate concept
-- Put the bird move inside a bounding box
 
 ## Installation
 Downlaod code from the repository
