@@ -29,4 +29,4 @@ Install packages
 ```
 
 ## Other material
-Week 3 presentation material is [here](https://docs.google.com/presentation/d/1l-usmrIogqymbeiyN1_3BzMB5UAB7IkaJR11bpHsK6Q/edit?usp=sharing) (access restricted)
+Week 3 presentation material is [here](https://docs.google.com/presentation/d/1l-usmrIogqymbeiyN1_3BzMB5UAB7IkaJR11bpHsK6Q/edit?usp=sharing)
